@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int a, b, sum=0;
+
+   cout<<"unesi dva cijela broja."<<endl;
+   cin>>a>>b;
+   cout<<"Suma neparnih brojeva izmedju "<<a<<" i "<<b<<" iznosi: ";
+
+   if(a>b)
+    swap(a, b);
+
+   while(a<b){
+       if(a%2==1)
+    sum+=a;
+
+   a++;
+   }
+   cout<<sum<<endl;
+
+   return 0;
+}

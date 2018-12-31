@@ -1,0 +1,15 @@
+#include <iostream>
+
+int main()
+{
+    using namespace std;
+    int a=0;
+    int b=1;
+    while (a<100){
+        b=b+a;
+        a++;
+    }
+    cout<<"Suma svih dvocifrenih prirodnih brojeva je: "<<b<<endl;
+
+    return 0;
+    }

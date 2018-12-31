@@ -1,0 +1,47 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float a, b, c;
+    int repet=1;
+    char odg;
+
+    while (repet==1){
+    cout<<"Unesite stranice."<<endl;
+    cin>>a>>b>>c;
+
+    if (a+b>=c && a+c>=b && b+c>=a)
+        cout<<"Trougao sa ovim stranicama je moguc."<<endl;
+    else
+        cout<<"date stranice ne mogu cicniti trougao."<<endl;
+
+
+        int ctrl=0;
+
+        do {
+        cout<<"Da li seltie ponoviti unos y/n."<<endl;
+        cin>>odg;
+        cout<<"_________________________________________________________"<<endl<<endl;
+        if (odg=='y'){
+            repet=1;
+            ctrl=0;
+        }
+
+        else if (odg=='n'){
+            repet=2;
+            cout<<"KRAJ!"<<endl;
+            ctrl=0;
+        }
+        else {
+            cout<<"GRESKA!/n Nepoznat unos!"<<endl;
+            ctrl=1;
+        }
+        }
+        while (ctrl==1);
+    }
+
+
+    return 0;
+    }

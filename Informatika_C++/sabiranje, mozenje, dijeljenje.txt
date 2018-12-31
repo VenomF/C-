@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float a, b;
+
+    cout<<"Unesite dva cijela broja."<<endl;
+    cin>>a>>b;
+
+    if(a+b>=0 && a-b>=0 && a*b>=0 && a/b>=0)
+        cout<<"Sabiranje: "<<a+b<<endl<<"Oduzimanje: "<<a-b<<endl<<"Mnozenje: "<<a*b<<endl<<"Dijeljenje: "<<a/b<<endl;
+    else
+        cout<<"Jedna ili vise operacija ima negativan rezultat."<<endl;
+
+    return 0;
+}
